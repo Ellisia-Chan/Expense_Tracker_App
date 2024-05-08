@@ -258,7 +258,8 @@ def add_to_db(self):
             messagebox.showerror("Error", "Please enter a valid amount")
     else:
         messagebox.showerror("Error", "Please fill in all fields")
-
+        
+    self.option_num = 0
 # Update Data to Database
 def update_data_to_db(self):
     current_date = self.current_date.get()
@@ -282,7 +283,8 @@ def update_data_to_db(self):
             messagebox.showerror("Error", "Please enter a valid values")
     else:
         messagebox.showerror("Error", "Please fill in all fields")
-        
+    
+    self.option_num = 0    
 # Delete Data       
 def remove_data_from_db(self):
     current_date = self.current_date.get()
@@ -299,7 +301,8 @@ def remove_data_from_db(self):
             self.update_total_balance()
     else:
         messagebox.showerror("Error", "Please fill in all fields")   
-                     
+    
+    self.option_num = 0                 
 def clear_data(self):
     result = messagebox.askyesno("Clear Data", "Do you want to Delete All Data? Data cannot be recovered after deletion")
     
@@ -578,7 +581,7 @@ def create_chart_and_add_entries(self, event=None):
         sizes = [expenses_percentage, income_percentage]
         colors = ['#ff9999', '#66b3ff']
 
-        self.ax.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140)
+        self.ax.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140, textprops={'fontsize': 8})
         self.ax.axis('equal')
         self.ax.set_title(f'Percentage of Expenses and Income in\n {self.chart_month.get()} {self.chart_year.get()}', fontsize=9)
 
