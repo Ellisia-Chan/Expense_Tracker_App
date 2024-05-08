@@ -308,6 +308,8 @@ def clear_data(self):
         self.load_entries()
         self.update_total_balance()
         self.menu_frame.place_forget()
+        self.filter_treeview()
+        self.create_chart_and_add_entries()
         messagebox.showinfo("Success", "Successfully Cleared Data")
 
 
