@@ -17,7 +17,6 @@ from tkinter import Button, PhotoImage, ttk, messagebox
 
 
 import function_list as function
-import chart as chart
 from currency_conv import CurrencyConverter
 from calc import Calculator
 from image_data import image_data
