@@ -581,9 +581,10 @@ def create_chart_and_add_entries(self, event=None):
         sizes = [expenses_percentage, income_percentage]
         colors = ['#ff9999', '#66b3ff']
 
-        self.ax.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140, textprops={'fontsize': 8})
+        self.ax.pie(sizes, labels=labels, colors=colors, autopct='%1.1f%%', startangle=140, textprops={'fontsize': 9})
         self.ax.axis('equal')
         self.ax.set_title(f'Percentage of Expenses and Income in\n {self.chart_month.get()} {self.chart_year.get()}', fontsize=9)
+        self.fig.subplots_adjust(left=0.2, right=0.8, top=0.8, bottom=0.2)
 
     # Create a canvas to display the Matplotlib chart
     canvas = FigureCanvasTkAgg(self.fig, master=self.chart_frame)
