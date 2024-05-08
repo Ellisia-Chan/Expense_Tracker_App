@@ -1,0 +1,21 @@
+# Load images and their coordinates
+image_data = [
+    ("image_1.png", (350, 310)),
+    ("image_2.png", (277, 291)),
+    ("image_3.png", (350, 560)),
+    ("image_4.png", (39, 409)),
+    ("image_5.png", (661, 421)),
+    ("image_6.png", (132, 577)),
+    ("image_7.png", (41, 374)),
+    ("image_8.png", (573, 551)),
+    ("image_9.png", (343, 300)),
+    ("image_10.png", (365, 223)),
+    ("image_11.png", (350, 39)),
+    ("image_12.png", (533, 36)),
+    ("image_13.png", (357, 50)),
+    ("image_14.png", (677, 48)),
+    ("image_15.png", (41, 150)),
+    ("image_16.png", (350, 369)),
+    ("image_17.png", (659, 219)),
+    ("image_18.png", (663, 543)),
+]
