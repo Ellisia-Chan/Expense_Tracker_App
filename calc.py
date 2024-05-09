@@ -14,6 +14,7 @@ class Calculator:
 
         self.create_widgets()
         self.bind_number_buttons()
+        self.ent_num_field.focus_set()
         
     def create_widgets(self):
         # Frame
@@ -268,13 +269,15 @@ class Calculator:
         self.ent_num_field.config(validate="key", validatecommand=(self.ent_num_field.register(lambda char: char.isdigit() or char in "-+÷%x()" or char == ""), "%S"))    
     
     
-    def delete(self):
+    def delete(self, event=None):
         focused_widget = self.app.focus_get()
         
         if isinstance(focused_widget, tk.Entry) and focused_widget == self.ent_num_field:
             cursor_pos = focused_widget.index(tk.INSERT)  # Get the cursor position
             if cursor_pos > 0:
+                self.ent_num_field.config(validate="none")
                 focused_widget.delete(cursor_pos - 1)  # Delete one character before the cursor position
+                self.ent_num_field.config(validate="key")
 
         
         # expression = self.ent_num_field.get()
