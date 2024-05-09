@@ -35,6 +35,9 @@ class LoadingScreen(tk.Tk):
 
         # Store PhotoImage objects
         self.photo_images = []
+        
+        # Check if Database exist, if not, create database file where the py file is located.
+        db.create_database()
 
         # Call methods
         self.loading_screen()
@@ -113,11 +116,6 @@ class MyApp(tk.Tk):
         # Global variable to store the sidebar frame
         self.menu_frame = None
         
-        # Check if Database exist, if not, create database file where the py file is located.
-        db.create_database()
-
-
-
     # Canvas to create the base frame of the app        
     def canvas(self):
         self.canvas = tk.Canvas(self, bg="#FFFFFF", height=600, width=700, bd=0, highlightthickness=0, relief="ridge")
