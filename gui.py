@@ -5,6 +5,11 @@
 # Customized GUI made using figma, credits to the Tkinter Designer by Parth Jadhav to generate the file
 # https://github.com/ParthJadhav/Tkinter-Designer
 
+#Pip Commands if requirements.txt not work:
+# pip install pillow
+# pip install pathlib
+# pip install matplotlib
+
 import db
 import tkinter as tk
 import datetime
