@@ -15,13 +15,13 @@ class CurrencyConverter:
         self.exchange_rate = {
             'US dollar (USD)': 1.0,
             'Euro (EUR)': 0.93,
-            'Japanese yen (JPY)': 153.06,
-            'Pound sterling (GBP)': 0.79,
+            'Japanese yen (JPY)': 155.52,
+            'Pound sterling (GBP)': 0.80,
             'Australian dollar (AUD)': 1.51,
             'Canadian dollar (CAD)': 1.37,
-            'Philippine peso (PHP)': 57.06,
-            'Chinese Yuan (CNY)': 7.24,
-            'Hong Kong dollar (HKD)': 7.81,
+            'Philippine peso (PHP)': 57.26,
+            'Chinese Yuan (CNY)': 7.22,
+            'Hong Kong dollar (HKD)': 7.82,
             'New Zealand dollar (NZD)': 1.66  
         }
         
