@@ -1,6 +1,6 @@
 # Final-Project-1st-YR-2nd-Sem
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-Yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
-![Generic badge](https://img.shields.io/badge/Development%3f-Ongoing-green.svg)
+![Generic badge](https://img.shields.io/badge/Development%3f-Complete-blue.svg)
 ![Developer](https://img.shields.io/badge/Developer-ChristianJude23-blue)
 ![Developer](https://img.shields.io/badge/Developer-owenlim225-blue)
 
