@@ -10,7 +10,6 @@ them, and view reports of their spending over time. Tkinter can be used to creat
 
 <br>
 
-
 # Snapshots
 
 
